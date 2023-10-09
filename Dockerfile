@@ -5,7 +5,7 @@ FROM python:3.9
 WORKDIR /app
 
 # 克隆 GitHub 存储库的内容
-RUN git clone https://github.com/kevin-meng/HuggingfaceDownloadShare.git
+RUN git clone https://github.com/blueroutecn/HuggingfaceDownloadShare.git
 
 # 切换到克隆的存储库目录
 WORKDIR /app/HuggingfaceDownloadShare
