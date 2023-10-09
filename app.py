@@ -1,7 +1,7 @@
 import os 
 import gradio as gr
 from huggingface_hub import snapshot_download
-from bypy import ByPy
+# from bypy import ByPy
 
 
 def download(repo_id):
@@ -15,20 +15,22 @@ def download(repo_id):
 
 
 def upload_by_path(source_path,dest_path):
-    bp = ByPy()
-    out = bp.syncup(
-      source_path,
-      path_name
-    )
-    return out
+    ...
+    # bp = ByPy()
+    # out = bp.syncup(
+    #   source_path,
+    #   path_name
+    # )
+    # return out
 
 def upload_by_file(source_path):
-    bp = ByPy()
-    out = bp.upload(
-      source_path,
-      source_path.split("/")[-1]
-    )
-    return out
+    ...
+    # bp = ByPy()
+    # out = bp.upload(
+    #   source_path,
+    #   source_path.split("/")[-1]
+    # )
+    # return out
 
 
 
@@ -53,8 +55,8 @@ def app():
             submit_bt.click(download,input,outputs= output)
 
         with gr.Row():
-            bp = ByPy()
-            key = bp.list()
+            # bp = ByPy()
+            key = [] #bp.list()
             with gr.Column():
                 gr.Markdown("### 输入上传百度云")
         with gr.Row():
